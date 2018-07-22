@@ -18,6 +18,7 @@
     "format": "prettier --write \"{src,__tests__}/**/*.js\"",
     "lint": "eslint src/ __tests__/",
     "prepublishOnly": "npm run clean && npm run build",
+    "prepare": "npm run prepublishOnly",
     "test": "jest",
     "test:ci": "jest --runInBand",
     "watch:test": "npm test -- --watch",
